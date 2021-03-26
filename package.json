@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-android-mediastore",
+  "version": "0.0.1",
+  "description": "Cordova plugin for storing pictures to the gallery using the Android MediaStore API (SDK 29+)",
+  "cordova": {
+    "id": "cordova-plugin-android-mediastore",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Soohan Park",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heartade/cordova-plugin-android-mediastore.git"
+  }
+}

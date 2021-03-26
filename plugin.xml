@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-android-mediastore" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CordovaAndroidMediaStore</name>
+    <description>Provides a store() function that saves a base64 png bytestring to the gallery as a png file.</description>
+    <license>MIT</license>
+    <keywords>cordova,android,mediastore,image</keywords>
+    <js-module name="CordovaAndroidMediaStore" src="www/CordovaAndroidMediaStore.js">
+        <clobbers target="cordova.plugins.CordovaAndroidMediaStore" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CordovaAndroidMediaStore">
+                <param name="android-package" value="com.heartade.CordovaAndroidMediaStore" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/CordovaAndroidMediaStore.java" target-dir="src/cordova-plugin-android-mediastore/CordovaAndroidMediaStore" />
+    </platform>
+</plugin>
