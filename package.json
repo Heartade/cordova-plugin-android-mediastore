@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-android-mediastore",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Cordova plugin for storing pictures to the gallery using the Android MediaStore API (SDK 29+)",
   "cordova": {
     "id": "cordova-plugin-android-mediastore",

@@ -55,7 +55,6 @@ public class CordovaAndroidMediaStore extends CordovaPlugin {
             public void run() {
                 try {
                     byte[] byteArray = Base64.decode(byteString, Base64.DEFAULT);
-                    Log.e("Swink", byteArray.toString());
                     Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
                     Context context = this.cordova.getActivity();
                     ContentResolver contentResolver = context.getContentResolver();
@@ -82,7 +81,6 @@ public class CordovaAndroidMediaStore extends CordovaPlugin {
                         FileOutputStream out = new FileOutputStream(file);
                         bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
                         Uri contentUri = Uri.fromFile(file);
-                        Log.e("Swink",contentUri.toString());
                         context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, contentUri));
                     }
                     callbackContext.success();
